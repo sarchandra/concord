@@ -7,6 +7,7 @@ import { LandingComponent } from './landing/landing.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SignupComponent } from './signup/signup.component';
 import { ConcordhomeComponent } from './concordhome/concordhome.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 @NgModule({
     imports: [
@@ -18,7 +19,8 @@ import { ConcordhomeComponent } from './concordhome/concordhome.component';
         LandingComponent,
         SignupComponent,
         ProfileComponent,
-        ConcordhomeComponent
+        ConcordhomeComponent,
+        AboutusComponent
     ]
 })
 export class ExamplesModule { }

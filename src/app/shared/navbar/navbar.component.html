@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" href="https://www.concord.co.in">
+            <a class="navbar-brand"  [routerLink]="['/home']">
                 <img src="assets/img/logotrans.png" class="img-rounded img-responsive">
                  Concord International 
             </a>
@@ -16,7 +16,7 @@
         <div class="navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="https://www.creative-tim.com/product/paper-kit-2-pro-angular?ref=pk2-angular-free-local" target="_blank" class="nav-link btn btn-primary btn-round"><i class="nc-icon nc-globe"></i>About Us</a>
+                    <a [routerLink]="['/aboutus']" class="nav-link btn btn-primary btn-round"><i class="nc-icon nc-globe"></i>About Us</a>
                 </li>
                 <li class="nav-item">
                     <div ngbDropdown class="d-inline-block dropdown">

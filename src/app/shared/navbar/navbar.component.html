@@ -15,33 +15,12 @@
         </div>
         <div class="navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
-                        <i class="fa fa-twitter"></i>
-                        <p class="d-lg-none">Twitter</p>
-                    </a>
+                <li class="nav-item">
+                    <a href="https://www.creative-tim.com/product/paper-kit-2-pro-angular?ref=pk2-angular-free-local" target="_blank" class="nav-link btn btn-primary btn-round"><i class="nc-icon nc-globe"></i>About Us</a>
                 </li>
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
-                        <i class="fa fa-facebook-square"></i>
-                        <p class="d-lg-none">Facebook</p>
-                    </a>
-                </li>
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
-                        <i class="fa fa-instagram"></i>
-                        <p class="d-lg-none">Instagram</p>
-                    </a>
-                </li>
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Star on GitHub" data-placement="bottom" href="https://www.github.com/CreativeTimOfficial/paper-kit-2-angular" target="_blank">
-                        <i class="fa fa-github"></i>
-                        <p class="d-lg-none">GitHub</p>
-                    </a>
-                </li>
-                <li class="nav-item" *ngIf="!isDocumentation()">
+                <li class="nav-item">
                     <div ngbDropdown class="d-inline-block dropdown">
-                        <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle> <i class="nc-icon nc-layout-11"></i> Products</a>
+                        <a class="nav-link btn btn-primary btn-round" id="dropdownBasic1" ngbDropdownToggle> <i class="nc-icon nc-layout-11"></i> Products</a>
                         <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
                             <a class="dropdown-item">4Active</a>
                             <a class="dropdown-item">ANCO</a>
@@ -50,11 +29,9 @@
                         </div>
                     </div>
                 </li>
-                <li class="nav-item" *ngIf="isHome()">
-                    <a href="https://www.creative-tim.com/product/paper-kit-2-pro-angular?ref=pk2-angular-free-local" target="_blank" class="btn btn-danger btn-round">Upgrade to Pro</a>
-                </li>
+               
                 <li class="nav-item" *ngIf="!isHome()">
-                    <a [routerLink]="['/home']" *ngIf="!isDocumentation()" class="nav-link"><i class="nc-icon nc-diamond"></i>Services</a>
+                    <a [routerLink]="['/home']" *ngIf="!isDocumentation()" class="nav-link btn btn-primary btn-round"><i class="nc-icon nc-diamond"></i>Services</a>
                     <a [routerLink]="['/home']" *ngIf="isDocumentation()" class="nav-link">Back to Kit</a>
                 </li>
                 <li class="nav-item" *ngIf="isDocumentation()">

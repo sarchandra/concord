@@ -3,7 +3,7 @@
         <div class="navbar-translate">
             <a class="navbar-brand"  [routerLink]="['/home']">
                 <img src="assets/img/logotrans.png" class="img-rounded img-responsive">
-                 Concord International 
+                <span style="font-size:x-large;"> Concord International </span>
             </a>
             <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
                 <span class="navbar-toggler-bar"></span>
@@ -16,11 +16,11 @@
         <div class="navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a [routerLink]="['/aboutus']" class="nav-link btn btn-primary btn-round"><i class="nc-icon nc-globe"></i>About Us</a>
+                    <a [routerLink]="['/aboutus']" class="nav-link">About Us</a>
                 </li>
                 <li class="nav-item">
                     <div ngbDropdown class="d-inline-block dropdown">
-                        <a class="nav-link btn btn-primary btn-round" id="dropdownBasic1" ngbDropdownToggle> <i class="nc-icon nc-layout-11"></i> Products</a>
+                        <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle>  Products</a>
                         <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
                             <a class="dropdown-item">4Active</a>
                             <a class="dropdown-item">ANCO</a>
@@ -31,11 +31,16 @@
                 </li>
                
                 <li class="nav-item" *ngIf="!isHome()">
-                    <a [routerLink]="['/home']" *ngIf="!isDocumentation()" class="nav-link btn btn-primary btn-round"><i class="nc-icon nc-diamond"></i>Services</a>
-                    <a [routerLink]="['/home']" *ngIf="isDocumentation()" class="nav-link">Back to Kit</a>
+                    <a [routerLink]="['/home']" *ngIf="!isDocumentation()" class="nav-link">Services</a>
                 </li>
-                <li class="nav-item" *ngIf="isDocumentation()">
-                    <a href="https://github.com/creativetimofficial/paper-kit-2-angular/issues?ref=pk2-free-local" target="_blank" class="nav-link">Have an issue</a>
+                <li class="nav-item" *ngIf="!isHome()">
+                    <a [routerLink]="['/home']" *ngIf="!isDocumentation()" class="nav-link">Publications</a>
+                </li>
+                <li class="nav-item" *ngIf="!isHome()">
+                    <a [routerLink]="['/home']" *ngIf="!isDocumentation()" class="nav-link">Videos</a>
+                </li>
+                <li class="nav-item" *ngIf="!isHome()">
+                    <a [routerLink]="['/home']" *ngIf="!isDocumentation()" class="nav-link">Brochures</a>
                 </li>
             </ul>
         </div>

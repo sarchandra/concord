@@ -1,8 +1,20 @@
 .footer{
     background-attachment: fixed;
+    background-image: linear-gradient(#9d162e,rgba(0,0,0,0),#9d162e),linear-gradient(to right bottom,#9d162e 50%,#c2002f 50%);
     position: relative;
     line-height: 20px;
 }
+.footer h3 {
+    color: #ffffff;
+    font-weight: bold;
+}
+.footer h6 , .footer p {
+    color: #ffffff;
+}
+.footer p a:hover{
+    font-weight: bold;
+}
+
 .footer nav > ul {
   list-style: none;
   margin: 0;
@@ -18,7 +30,7 @@
 }
 
 .footer nav > ul a:not(.btn) {
-    color: #777777;
+    color: #ffffff !important;
     display: block;
     margin-bottom: 3px;
     line-height: 1.6;
@@ -29,11 +41,11 @@
 }
 .footer nav > ul a:not(.btn):hover,
 .footer nav > ul a:not(.btn):focus {
-  color: #777777;
+  color: #ffffff;
   opacity: 1;
 }
 .footer .copyright {
-  color: #777777;
+  color: #ffffff;
   padding: 10px 0px;
   font-size: 14px;
   margin: 15px 3px;

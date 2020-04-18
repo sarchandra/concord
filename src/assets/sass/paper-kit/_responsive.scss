@@ -320,6 +320,7 @@
                     height: 400px !important;
                 }
                 .social-img,
+                .nc-hide,
                 .share-btn-img{
                     display: none;
                 }
@@ -682,6 +683,11 @@
            }
         }
     }
+}
+@media screen and (max-width: 600px){
+     .nc-hide{
+         display: none;
+     }
 }
 @media screen and (max-width: 1025px){
     .input-group{

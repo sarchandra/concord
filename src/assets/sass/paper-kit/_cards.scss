@@ -72,7 +72,17 @@
         }
     }
 }
+.card-photo{
+    background-color: #fff;
+    color: #fff;
+    border-radius: 20px;
+    width: 100%;
 
+}
+.card-photo .card-description ,.card-photo  h4,.card-photo .card-title, .card-photo .author .card-category{
+    color: #333 !important;
+    padding: 0px 2px 4px 2px;
+}
 .card-profile{
     margin-top: 30px;
     text-align: center;

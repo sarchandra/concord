@@ -1,7 +1,51 @@
 .section{
     padding: 70px 0;
     position: relative;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
+}
+.section-bg{
+    padding: 10px 0;
+    position: relative;
+    // background-color: #efefef;
+    background-image: linear-gradient(#9d162e, rgba(209, 10, 10, 0.733), #9d162e), linear-gradient(to left top, #9d162e 50%, #c2002f 50%);
+
+}
+.section-bg .container{
+    border-radius: 20px;
+    // background-image: linear-gradient(#9d162e, rgba(209, 10, 10, 0.733), #9d162e), linear-gradient(to left top, #9d162e 50%, #c2002f 50%);
+    background-color: #efefef;
+
+    margin: -80px auto 0px;
+    position: relative;
+    z-index: 100;
+    color: #ffffff;
+    padding-bottom: 30px;
+}
+.container-page{
+    border-radius: 20px;
+    // background-image: linear-gradient(#9d162e, rgba(209, 10, 10, 0.733), #9d162e), linear-gradient(to left top, #9d162e 50%, #c2002f 50%);
+    background-color: #efefef;
+
+    margin: -60px auto -40px;
+    position: relative;
+    z-index: 100;
+    color: #333;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+.section-bg .container .title, .section-bg .info-title, .section-bg .description{ 
+    color: #333 ;
+}
+.section-bg .info-title,.container .title{
+    font-variant-caps: all-small-caps;
+}
+.section-bg .info-title{
+    font-weight: 400;
+    padding: 4px 2px; 
+}
+.section-bg .container .title
+{
+    padding: 30px 5px!important;
 }
 .section-with-space{
     padding: 60px 0;

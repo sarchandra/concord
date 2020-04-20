@@ -29,12 +29,13 @@
     margin: -60px auto -40px;
     position: relative;
     z-index: 100;
-    color: #333;
+    color: $black-color;
+
     font-weight: 500;
     padding-bottom: 30px;
 }
 .section-bg .container .title, .section-bg .info-title, .section-bg .description{ 
-    color: #333 ;
+    color: $black-color;
 }
 .section-bg .info-title,.container .title{
     font-variant-caps: all-small-caps;
@@ -100,6 +101,8 @@
     .title,
     .info-title{
         color: $white-color;
+        font-size: larger;
+        font-weight: 600;
     }
 }
 [class*="features-"],

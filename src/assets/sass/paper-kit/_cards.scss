@@ -75,12 +75,19 @@
 .card-photo{
     background-color: #fff;
     color: #fff;
+    
     border-radius: 20px;
     width: 100%;
 
 }
+.card-photo p{
+    font-size: 18px;
+}
+.card-photo .author{
+    font-size: 1.4em;
+}
 .card-photo .card-description ,.card-photo  h4,.card-photo .card-title, .card-photo .author .card-category{
-    color: #333 !important;
+    color: $black-color !important;
     padding: 0px 2px 4px 2px;
 }
 .card-profile{

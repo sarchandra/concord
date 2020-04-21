@@ -53,3 +53,32 @@
 @import "paper-kit/plugins/datetimepicker";
 @import "paper-kit/social-buttons";
 @import "paper-kit/examples";
+
+.product h2, .product h2{
+    font-size: 42px;
+    font-weight: 500;
+}
+.product .cap2,.product .cap2 a{
+    padding: 10px 10px;
+    background-color: red($color: #000000);
+    font-size: 24px;
+    font-weight: 500;
+}
+.product ul, .product ul li{
+    padding: 5px 10px;
+    margin: 2px 20px;
+}
+.product a {
+    color: $black-color;
+    font-size: 16px;
+    font-weight: 500;
+}
+.product a:hover {
+    color: #9d162e;
+    font-weight: 600;
+ 
+}
+.product h3, .product h3 a{
+    font-size: 30px;
+    font-weight: 500;
+}

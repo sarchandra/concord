@@ -42,11 +42,18 @@
 }
 .section-bg .info-title{
     font-weight: 400;
-    padding: 4px 2px; 
+    padding: 0px 2px; 
 }
 .section-bg .container .title
 {
-    padding: 30px 5px!important;
+    padding: 10px 5px!important;
+}
+.section-bg h2{
+    padding: 4px;
+    margin: 4px;
+}
+.titleimg{
+    padding-top: 10px;
 }
 .section-with-space{
     padding: 60px 0;

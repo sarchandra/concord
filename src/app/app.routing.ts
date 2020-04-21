@@ -10,6 +10,20 @@ import { LandingComponent } from './examples/landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { ConcordhomeComponent } from './examples/concordhome/concordhome.component';
 import { AboutusComponent } from './examples/aboutus/aboutus.component';
+import { ProductComponent } from './examples/product/product.component';
+import { ProductmessringComponent } from './examples/productmessring/productmessring.component';
+import { ProductlmtComponent } from './examples/productlmt/productlmt.component';
+import { ProductargosyComponent } from './examples/productargosy/productargosy.component';
+import { ProductrotadataComponent } from './examples/productrotadata/productrotadata.component';
+import { ProductroscomComponent } from './examples/productroscom/productroscom.component';
+import { ProductanotronicComponent } from './examples/productanotronic/productanotronic.component';
+import { ProductrecsaComponent } from './examples/productrecsa/productrecsa.component';
+import { ProductlanatusComponent } from './examples/productlanatus/productlanatus.component';
+import { ProducttitanComponent } from './examples/producttitan/producttitan.component';
+import { ServiceComponent } from './examples/service/service.component';
+import { VideoComponent } from './examples/video/video.component';
+import { PublicationComponent } from './examples/publication/publication.component';
+import { BrochureComponent } from './examples/brochure/brochure.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -19,6 +33,20 @@ const routes: Routes =[
     { path: 'landing',          component: LandingComponent },
     { path: 'home2',            component: ConcordhomeComponent },
     { path: 'aboutus',            component: AboutusComponent },
+    { path: 'product',           component:ProductComponent },
+    { path: 'productmessring',   component:ProductmessringComponent },
+    { path: 'productlmt',   component:ProductlmtComponent },
+    { path: 'productargosy',   component:ProductargosyComponent },
+    { path: 'productrotadata',   component:ProductrotadataComponent },
+    { path: 'productroscom',   component:ProductroscomComponent },
+    { path: 'productanotronic',   component:ProductanotronicComponent },
+    { path: 'productrecsa',   component:ProductrecsaComponent },
+    { path: 'productlanatus',   component:ProductlanatusComponent },
+    { path: 'producttitan',   component:ProducttitanComponent },
+    { path: 'service',           component: ServiceComponent },
+    { path: 'video',           component: VideoComponent },
+    { path: 'publication',           component: PublicationComponent },
+    { path: 'brochure',           component: BrochureComponent },
     { path: 'nucleoicons',      component: NucleoiconsComponent }
 ];
 

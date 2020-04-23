@@ -22,6 +22,7 @@ import { ProductanotronicComponent } from './productanotronic/productanotronic.c
 import { ProductrecsaComponent } from './productrecsa/productrecsa.component';
 import { ProductlanatusComponent } from './productlanatus/productlanatus.component';
 import { ProducttitanComponent } from './producttitan/producttitan.component';
+import { ProductlistComponent } from './productlist/productlist.component';
 
 @NgModule({
     imports: [
@@ -48,7 +49,8 @@ import { ProducttitanComponent } from './producttitan/producttitan.component';
         ProductanotronicComponent,
         ProductrecsaComponent,
         ProductlanatusComponent,
-        ProducttitanComponent
+        ProducttitanComponent,
+        ProductlistComponent
     ]
 })
 export class ExamplesModule { }

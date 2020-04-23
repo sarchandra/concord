@@ -50,6 +50,13 @@ export class AppComponent implements OnInit {
 
         }
 
+        this.removeAllMenuSelect();
+
+    }
+    removeAllMenuSelect(){
+        var body = document.querySelectorAll('.video')[0];
+       // alert(body);
+        body.classList.add("select");
     }
     removeFooter() {
         var titlee = this.location.prepareExternalUrl(this.location.path());

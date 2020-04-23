@@ -17,8 +17,8 @@ import { ExamplesModule } from './examples/examples.module';
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
-  ],
+    FooterComponent,
+   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),

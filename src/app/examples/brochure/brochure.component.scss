@@ -1,0 +1,19 @@
+
+h3{
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+p, p a{
+    font-size: 20px;
+    color: #333;
+    font-weight: 300;
+}
+p a:hover{
+    color: #9d162e;
+
+}
+.page-header .filter::after{
+    background-color: rgba(0, 0, 0, 0.0);
+
+}

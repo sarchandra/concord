@@ -1,0 +1,33 @@
+p, p a{
+    font-size: 20px;
+    color: #333;
+    font-weight: 300;
+}
+p a:hover{
+    color: #9d162e;
+
+}
+video{
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+    max-width: 100%;
+    
+}
+.figure {
+    width: 800px;
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+.wp-block-video {
+    margin-left: 0;
+    margin-right: 0;
+}
+.page-header .filter::after{
+    background-color: rgba(0, 0, 0, 0.0);
+
+}

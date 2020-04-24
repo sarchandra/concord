@@ -17,7 +17,21 @@ export class NavbarComponent implements OnInit {
     ngOnInit() {
         const navbar: HTMLElement = this.element.nativeElement;
         this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
+        this.removeAllMenuSelect();
     }
+    ngOnChanges(changes: any) {
+        this.removeAllMenuSelect();
+
+    }
+    removeAllMenuSelect(){
+        var body = document.querySelectorAll('.menu');
+       //alert(body);
+       body.forEach(e=>{
+           e.classList.remove("select");
+       })
+       // body.classList.add("select");
+    }
+   
     sidebarOpen() {
         const toggleButton = this.toggleButton;
         const html = document.getElementsByTagName('html')[0];
@@ -47,6 +61,79 @@ export class NavbarComponent implements OnInit {
             this.sidebarClose();
         }
     };
+    selectedMenu(event:any){
+        this.removeAllMenuSelect();
+        event.target.classList.add("select");
+    }
+    onClickAboutus(event:any){
+        // this.removeAllMenuSelect();
+        // event.target.classList.add("select");
+        this.selectedMenu(event);
+    }
+    onClickProduct(event:any){
+        this.selectedMenu(event);
+    }
+    onClickPublication(event:any){
+        this.selectedMenu(event);
+    }
+    onClickVideo(event:any){
+        this.selectedMenu(event);
+    }
+    onClickBrochure(event:any){
+        this.selectedMenu(event);
+    }
+    onfocusproduct(event:any){
+       // alert("a");
+        event.target.dispatchEvent(new Event('click'));
+    }
+    isAboutus() {
+        var titlee = this.location.prepareExternalUrl(this.location.path());
+        if(titlee.charAt(0) === '#'){
+            titlee = titlee.slice( 1 );
+        }
+          if( titlee === '/aboutus' ) {
+              return true;
+          }
+          else {
+              return false;
+          }
+      }
+    isVideo() {
+        var titlee = this.location.prepareExternalUrl(this.location.path());
+        if(titlee.charAt(0) === '#'){
+            titlee = titlee.slice( 1 );
+        }
+          if( titlee === '/video' ) {
+              return true;
+          }
+          else {
+              return false;
+          }
+      }
+      isPublication() {
+        var titlee = this.location.prepareExternalUrl(this.location.path());
+        if(titlee.charAt(0) === '#'){
+            titlee = titlee.slice( 1 );
+        }
+          if( titlee === '/pulication' ) {
+              return true;
+          }
+          else {
+              return false;
+          }
+      }
+      isBrochure() {
+        var titlee = this.location.prepareExternalUrl(this.location.path());
+        if(titlee.charAt(0) === '#'){
+            titlee = titlee.slice( 1 );
+        }
+          if( titlee === '/brochure' ) {
+              return true;
+          }
+          else {
+              return false;
+          }
+      }
     isHome() {
       var titlee = this.location.prepareExternalUrl(this.location.path());
       if(titlee.charAt(0) === '#'){

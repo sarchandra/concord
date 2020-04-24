@@ -23,6 +23,8 @@ import { ProductrecsaComponent } from './productrecsa/productrecsa.component';
 import { ProductlanatusComponent } from './productlanatus/productlanatus.component';
 import { ProducttitanComponent } from './producttitan/producttitan.component';
 import { ProductlistComponent } from './productlist/productlist.component';
+import { RavindranathComponent } from './ravindranath/ravindranath.component';
+import { CharankumarComponent } from './charankumar/charankumar.component';
 
 @NgModule({
     imports: [
@@ -50,7 +52,9 @@ import { ProductlistComponent } from './productlist/productlist.component';
         ProductrecsaComponent,
         ProductlanatusComponent,
         ProducttitanComponent,
-        ProductlistComponent
+        ProductlistComponent,
+        RavindranathComponent,
+        CharankumarComponent
     ]
 })
 export class ExamplesModule { }

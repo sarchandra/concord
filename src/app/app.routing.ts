@@ -24,6 +24,9 @@ import { ServiceComponent } from './examples/service/service.component';
 import { VideoComponent } from './examples/video/video.component';
 import { PublicationComponent } from './examples/publication/publication.component';
 import { BrochureComponent } from './examples/brochure/brochure.component';
+import { RavindranathComponent } from './examples/ravindranath/ravindranath.component';
+import { CharankumarComponent } from './examples/charankumar/charankumar.component';
+
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -47,6 +50,8 @@ const routes: Routes =[
     { path: 'video',           component: VideoComponent },
     { path: 'publication',           component: PublicationComponent },
     { path: 'brochure',           component: BrochureComponent },
+    { path: 'ravindranath',      component: RavindranathComponent },
+    { path: 'charankumar',      component: CharankumarComponent },
     { path: 'nucleoicons',      component: NucleoiconsComponent }
 ];
 

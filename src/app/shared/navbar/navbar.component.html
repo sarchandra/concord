@@ -17,11 +17,11 @@
         <div class="navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a [routerLink]="['/aboutus']" class="aboutus nav-link menu">About Us</a>
+                    <a [routerLink]="['/aboutus']" (click)="onClickAboutus($event)"  class="aboutus nav-link menu">About Us</a>
                 </li>
                 <li class="nav-item">
                     <div ngbDropdown class="d-inline-block dropdown">
-                        <a class="product nav-link menu" id="dropdownBasic1" ngbDropdownToggle> Products</a>
+                        <a class="product nav-link menu" (blur)="onfocusproduct($event)" (focus)="onfocusproduct($event)" (click)="onClickProduct($event)" id="dropdownBasic1" ngbDropdownToggle> Products</a>
                         <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
                             <a [routerLink]="['/productmessring']" class="dropdown-item">MESSRING</a>
                             <a [routerLink]="['/productlmt']" class="dropdown-item">LMT</a>
@@ -36,17 +36,17 @@
                     </div>
                 </li>
 
-                <li class="nav-item" *ngIf="!isHome()">
+                <!-- <li class="nav-item" *ngIf="!isHome()">
                     <a [routerLink]="['/home']" *ngIf="!isDocumentation()" class="service nav-link menu">Services</a>
+                </li> -->
+                <li class="nav-item" >
+                    <a [routerLink]="['/publication']" (click)="onClickPublication($event)" class="publication nav-link menu">Publications</a>
                 </li>
-                <li class="nav-item" *ngIf="!isHome()">
-                    <a [routerLink]="['/publication']" *ngIf="!isDocumentation()" class="publication nav-link menu">Publications</a>
+                <li class="nav-item" >
+                    <a [routerLink]="['/video']" (click)="onClickVideo($event)" class="video nav-link menu">Videos</a>
                 </li>
-                <li class="nav-item" *ngIf="!isHome()">
-                    <a [routerLink]="['/video']" *ngIf="!isDocumentation()" class="video nav-link menu">Videos</a>
-                </li>
-                <li class="nav-item" *ngIf="!isHome()">
-                    <a [routerLink]="['/brochure']" *ngIf="!isDocumentation()" class="brochure nav-link menu">Brochures</a>
+                <li class="nav-item">
+                    <a [routerLink]="['/brochure']" (click)="onClickVideo($event)"  class="brochure nav-link menu">Brochures</a>
                 </li>
             </ul>
         </div>

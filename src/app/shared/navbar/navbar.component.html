@@ -21,8 +21,9 @@
                 </li>
                 <li class="nav-item">
                     <div ngbDropdown class="d-inline-block dropdown">
-                        <a class="product nav-link menu" (blur)="onfocusproduct($event)" (focus)="onfocusproduct($event)" (click)="onClickProduct($event)" id="dropdownBasic1" ngbDropdownToggle> Products</a>
-                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
+                        <a class="product nav-link menu dropdown-toggle" (blur)="onfocusproduct($event)" (focus)="onfocusproduct($event)"
+                         (click)="onClickProduct($event)" id="dropdownBasic1" ngbDropdownTogglen>  Products</a>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary" open>
                             <a [routerLink]="['/productmessring']" class="dropdown-item">MESSRING</a>
                             <a [routerLink]="['/productlmt']" class="dropdown-item">LMT</a>
                             <a [routerLink]="['/productargosy']" class="dropdown-item">ARGOSY INTERNATIONAL</a>

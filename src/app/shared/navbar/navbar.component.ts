@@ -82,12 +82,12 @@ export class NavbarComponent implements OnInit {
     onClickBrochure(event:any){
         this.selectedMenu(event);
     }
-    onfocusproduct(event:any){
-       // alert("a");
+    onfocusproduct(event: any) {
+        alert('a');
         event.target.dispatchEvent(new Event('click'));
     }
     isAboutus() {
-        var titlee = this.location.prepareExternalUrl(this.location.path());
+        let titlee = this.location.prepareExternalUrl(this.location.path());
         if(titlee.charAt(0) === '#'){
             titlee = titlee.slice( 1 );
         }
@@ -99,7 +99,7 @@ export class NavbarComponent implements OnInit {
           }
       }
     isVideo() {
-        var titlee = this.location.prepareExternalUrl(this.location.path());
+        let titlee = this.location.prepareExternalUrl(this.location.path());
         if(titlee.charAt(0) === '#'){
             titlee = titlee.slice( 1 );
         }
@@ -111,43 +111,40 @@ export class NavbarComponent implements OnInit {
           }
       }
       isPublication() {
-        var titlee = this.location.prepareExternalUrl(this.location.path());
+        let titlee = this.location.prepareExternalUrl(this.location.path());
         if(titlee.charAt(0) === '#'){
             titlee = titlee.slice( 1 );
         }
           if( titlee === '/pulication' ) {
               return true;
-          }
-          else {
+          }else {
               return false;
           }
       }
       isBrochure() {
-        var titlee = this.location.prepareExternalUrl(this.location.path());
+        let titlee = this.location.prepareExternalUrl(this.location.path());
         if(titlee.charAt(0) === '#'){
             titlee = titlee.slice( 1 );
         }
           if( titlee === '/brochure' ) {
               return true;
-          }
-          else {
+          } else {
               return false;
           }
       }
     isHome() {
-      var titlee = this.location.prepareExternalUrl(this.location.path());
+      let titlee = this.location.prepareExternalUrl(this.location.path());
       if(titlee.charAt(0) === '#'){
           titlee = titlee.slice( 1 );
       }
         if( titlee === '/home' ) {
             return true;
-        }
-        else {
+        }else {
             return false;
         }
     }
     isDocumentation() {
-      var titlee = this.location.prepareExternalUrl(this.location.path());
+      let titlee = this.location.prepareExternalUrl(this.location.path());
       if(titlee.charAt(0) === '#'){
           titlee = titlee.slice( 1 );
       }

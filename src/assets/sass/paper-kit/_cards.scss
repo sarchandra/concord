@@ -110,13 +110,17 @@
             margin-top: 5px;
         }
     }
-
+    .card-avatar:hover{
+        transform: scale(1.3);
+    }
     .card-avatar{
         max-width: 120px;
         max-height: 120px;
         margin: -60px auto 0;
         border-radius: 50%;
         overflow: hidden;
+        transition: transform .2s; /* Animation */
+
 
         & img{
             max-width: 100%;

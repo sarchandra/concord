@@ -26,6 +26,7 @@ import { PublicationComponent } from './examples/publication/publication.compone
 import { BrochureComponent } from './examples/brochure/brochure.component';
 import { RavindranathComponent } from './examples/ravindranath/ravindranath.component';
 import { CharankumarComponent } from './examples/charankumar/charankumar.component';
+import { ProductancoComponent } from './examples/productanco/productanco.component';
 
 
 const routes: Routes =[
@@ -46,6 +47,7 @@ const routes: Routes =[
     { path: 'productrecsa',   component:ProductrecsaComponent },
     { path: 'productlanatus',   component:ProductlanatusComponent },
     { path: 'producttitan',   component:ProducttitanComponent },
+    { path: 'productanco',   component:ProductancoComponent },
     { path: 'service',           component: ServiceComponent },
     { path: 'video',           component: VideoComponent },
     { path: 'publication',           component: PublicationComponent },

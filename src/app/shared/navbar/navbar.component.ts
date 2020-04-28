@@ -83,7 +83,7 @@ export class NavbarComponent implements OnInit {
         this.selectedMenu(event);
     }
     onfocusproduct(event: any) {
-        alert('a');
+       // alert('a');
         event.target.dispatchEvent(new Event('click'));
     }
     isAboutus() {

@@ -31,11 +31,11 @@ import { ProductancoComponent } from './examples/productanco/productanco.compone
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: 'home',             component: ComponentsComponent },
+    { path: 'home2',             component: ComponentsComponent },
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },
     { path: 'landing',          component: LandingComponent },
-    { path: 'home2',            component: ConcordhomeComponent },
+    { path: 'home',            component: ConcordhomeComponent },
     { path: 'aboutus',            component: AboutusComponent },
     { path: 'product',           component:ProductComponent },
     { path: 'productmessring',   component:ProductmessringComponent },

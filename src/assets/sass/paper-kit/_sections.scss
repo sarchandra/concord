@@ -12,9 +12,10 @@
 }
 .section-bg .container{
     border-radius: 20px;
-    border: 1px solid #9d162e;
-    background-image: linear-gradient(#ffffff, rgba(238, 96, 96, 0.733), #ffffff), linear-gradient(to left top, #d6556c 10%, #f7e0e6 90%);
+    border: 1px solid #f7e0e6;
+    background-image: linear-gradient(#ffffff, rgba(221, 210, 210, 0.733), #ffffff), linear-gradient(to top right, #d6556c 50%, #f7e7eb 50%);
     background-color: #efefef;
+    box-shadow: 2px 2px 2px 5px rgba(218, 123, 123, 0.2), 0 6px 20px 0 rgba(238, 122, 122, 0.19);
 
     margin: -60px auto -20px;
     position: relative;

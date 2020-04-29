@@ -13,7 +13,45 @@ p a:hover{
     color: #9d162e;
 
 }
+
 .page-header .filter::after{
     background-color: rgba(0, 0, 0, 0.0);
 
 }
+.outterbox{
+    border: 2px solid #333;
+    padding: 5px;
+    border-radius: 5px;
+    background-image: linear-gradient(#e7e4e4, rgba(233, 231, 231, 0.733), #ffffff), linear-gradient(to left bottom, #ffffff 50%, #ffffff 50%);
+}
+.outterbox .info{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #adabab;
+    height: 100px;
+}
+.outterbox .info .cir{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+.content, .content p{
+margin: 10px 0px;
+padding:  5px;
+color: #000000;
+}
+.content, .content p a{
+    font-size: 20px;
+    font-weight: 400;
+}
+.rowex{
+    margin: 20px 0px;
+}
+
+.profile-content, .profile-content .main{
+    // background-image: linear-gradient(#9d162e, rgba(209, 10, 10, 0.733), #9d162e), linear-gradient(to left top, #9d162e 50%, #c2002f 50%);
+     background-image: linear-gradient(#ffffff, rgba(255, 251, 251, 0.733), #ffdbdb), linear-gradient(to left bottom, #fdf7f8 50%, #f1c8cf 50%);
+ 
+ }
+

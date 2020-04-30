@@ -1,7 +1,21 @@
+
 p, p a{
     font-size: 20px;
     color: #333;
-    font-weight: 300;
+    font-weight: 400;
+    vertical-align: top;
+    padding: 2px 0px 20px 0px;
+
+}
+p a span{
+    padding: 5px 20px;
+}
+p img,p a, img.a{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    vertical-align: text-top;
+    width: 180px;
+    height: 80px;
 }
 p a:hover{
     color: #9d162e;
@@ -16,6 +30,12 @@ video{
     max-height: 100%;
     max-width: 100%;
     
+}
+.videocontent{
+   margin: 20px 0px;
+   padding: 10px 0px;
+   border-bottom: 2px solid #cccccc;
+
 }
 .figure {
     width: 800px;

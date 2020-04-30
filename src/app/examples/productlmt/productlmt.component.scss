@@ -20,19 +20,26 @@ text-align: center;
 }
 
 .prodbody{
+
     background-color: #efefef;
     border: 2px solid #dfdfdf;
     border-radius: 10px;
     margin: 5px 10px;
 }
+.prodbody h4{
+    background-image:linear-gradient(to top left, #9d162e 50%, #c2002f 50%);
+
+}
 .prodbody h4,.prodbody h4 a{
-    background-color: #9d162e;
+   // background-color: #9d162e;
     color: #fff;
     padding: 10px;
     margin: 0px;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 400;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
 
 }
 .prodbody a {

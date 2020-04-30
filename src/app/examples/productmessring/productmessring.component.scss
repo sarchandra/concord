@@ -1,8 +1,15 @@
 .prodcontainer{
-    background-color: #efefef;
+   //background-color: #333;
+   // background-image: linear-gradient(#9d162e, rgba(209, 10, 10, 0.733), #9d162e), linear-gradient(to top left, #9d162e 50%, #c2002f 50%);
+   background-image:linear-gradient(to top right, #9d162e 70%, #c2002f 50%);
     border-radius: 10px;
     border: 2px solid #adabab;
-    margin: 10px 0px 5px 5px;
+    margin: 10px 0px 10px 0px;
+}
+.prodcontainer h4{
+    margin: 10px ;
+    color: #ffffff;
+    font-size: 20px;
 }
 .prodcontainer a {
     font-size: 20px;
@@ -11,8 +18,8 @@
     border-top: 2px solid #adabab;
     background-color: #fff;
     padding: 10px 0px;
-    margin: 10px 0px;
-    border-radius: 10px;
+    margin: 1px 0px 10px 0px;
+   // border-radius: 10px;
 
 }
 .rowex{
@@ -22,9 +29,17 @@
     width:100%; 
     height:100%;
     border-radius: 10px;
-    opacity: 0.8;
+    opacity: 0.9;
 
 }
 .prodimg img:hover {
     opacity: 1.0;
+  }
+
+  @media (min-width: 992px){
+.col-lg-3x {
+    -ms-flex: 0 0 33%;
+    flex: 0 0 33%;
+    max-width: 33%;
+}
   }

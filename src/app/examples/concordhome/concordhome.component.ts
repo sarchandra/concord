@@ -1,5 +1,8 @@
 import { Component, OnInit, Renderer } from '@angular/core';
 import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
+import { NgForm } from '@angular/forms';
+import { EmailContent } from 'services/emailcontent';
+
 
 @Component({
   selector: 'app-concordhome',
@@ -7,7 +10,9 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./concordhome.component.scss']
 })
 export class ConcordhomeComponent implements OnInit {
-
+  emailcontent = new EmailContent();
+  emailPattern = '^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$';
+  mobnumPattern = '^((\\+91-?)|0)?[0-9]{10}$';
   page = 4;
     page1 = 5;
     focus;
@@ -27,4 +32,13 @@ export class ConcordhomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  sendmail(form:NgForm){
+    if (form.invalid) {  
+       
+      return;  
+   }
+    alert("submit");
+    form.resetForm();
+    
+  }
 }

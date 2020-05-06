@@ -98,7 +98,7 @@
 
     <div class="section section-dark text-center">
         <div class="container">
-            <h2 class="title">Founders</h2>
+            <h2 class="title">Let's Talk About Us</h2>
             <div class="row" style="padding-bottom: 30px;">
                 <div class="col-lg-6 col-md-12">
                     <div class="card card-profile card-plain">
@@ -163,7 +163,7 @@
             <div class="row">
                 <div class="col-md-8 mr-auto ml-auto">
                     <h2 class="title text-center">Contact Us</h2>
-                    <form class="contact-form">
+                    <form  #contactform ="ngForm" (ngSubmit) = "sendmail(contactform)" class="contact-form">
                         <div class="row">
                             <div class="col-md-6">
                                 <label>Name</label>
@@ -171,9 +171,16 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="nc-icon nc-single-02"></i></span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="Name" (focus)="focus=true"
-                                        (blur)="focus=false">
+                                    <input type="text" class="form-control" name="contactname" placeholder="Enter Name" (focus)="focus=true"
+                                        (blur)="focus=false" [(ngModel)]="emailcontent.name" #contactname="ngModel" required minlength="4"  >
                                 </div>
+                                <div *ngIf="contactname.invalid && (contactname.dirty || contactname.touched)" class="alert alert-danger">
+                                <div *ngIf="contactname.errors.required">  
+                                    Name is required.  
+                                  </div>
+                                </div>
+
+                                
                             </div>
                             <div class="col-md-6">
                                 <label>Email</label>
@@ -185,13 +192,23 @@
                                         (blur)="focus1=false">
                                 </div>
                             </div>
+                            <div class="col-md-6">
+                                <label>Mobile</label>
+                                <div class="input-group" [ngClass]="{'input-group-focus has-error':focus1===true}">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> <i class="nc-icon nc-email-85"></i></span>
+                                    </div>
+                                    <input type="text" name="mobileno" class="form-control" placeholder="mo bile" (focus)="focus1=true"
+                                        (blur)="focus1=false" [pattern]="mobnumPattern" required [(ngModel)]="emailcontent.mobile" #mobileno="ngModel">
+                                </div>
+                            </div>
                         </div>
                         <label>Message</label>
                         <textarea class="form-control" rows="4"
                             placeholder="Tell us your thoughts and feelings..."></textarea>
                         <div class="row">
                             <div class="col-md-4 mr-auto ml-auto">
-                                <button class="btn btn-danger btn-lg btn-fill btn-round">Send Message</button>
+                                <button type ="submit" class="btn btn-danger btn-lg btn-fill btn-round">Send Message</button>
                             </div>
                         </div>
                     </form>

@@ -26,13 +26,16 @@ import { ProductlistComponent } from './productlist/productlist.component';
 import { RavindranathComponent } from './ravindranath/ravindranath.component';
 import { CharankumarComponent } from './charankumar/charankumar.component';
 import { ProductancoComponent } from './productanco/productanco.component';
+import { AlertmessageComponent } from './alertmessage/alertmessage.component';
+
 
 @NgModule({
     imports: [
         CommonModule,
         FormsModule,
         NgbModule,
-    ],
+        
+     ],
     declarations: [
         LandingComponent,
         SignupComponent,
@@ -56,7 +59,12 @@ import { ProductancoComponent } from './productanco/productanco.component';
         ProductlistComponent,
         RavindranathComponent,
         CharankumarComponent,
-        ProductancoComponent
-    ]
+        ProductancoComponent,
+        AlertmessageComponent,
+    ],
+    providers:[
+        AlertmessageComponent,
+    ],
+    entryComponents:[AlertmessageComponent]
 })
 export class ExamplesModule { }

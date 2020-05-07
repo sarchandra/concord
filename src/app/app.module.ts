@@ -11,13 +11,14 @@ import { FooterComponent } from './shared/footer/footer.component';
 
 import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent,
+    FooterComponent,    
    ],
   imports: [
     BrowserModule,
@@ -27,6 +28,7 @@ import { ExamplesModule } from './examples/examples.module';
     ComponentsModule,
     ExamplesModule,
     AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

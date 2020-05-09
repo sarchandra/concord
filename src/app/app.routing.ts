@@ -27,6 +27,7 @@ import { BrochureComponent } from './examples/brochure/brochure.component';
 import { RavindranathComponent } from './examples/ravindranath/ravindranath.component';
 import { CharankumarComponent } from './examples/charankumar/charankumar.component';
 import { ProductancoComponent } from './examples/productanco/productanco.component';
+import { Product4aComponent } from './examples/product4a/product4a.component';
 
 
 const routes: Routes =[
@@ -48,6 +49,7 @@ const routes: Routes =[
     { path: 'productlanatus',   component:ProductlanatusComponent },
     { path: 'producttitan',   component:ProducttitanComponent },
     { path: 'productanco',   component:ProductancoComponent },
+    { path: 'Product4a',   component:Product4aComponent },
     { path: 'service',           component: ServiceComponent },
     { path: 'video',           component: VideoComponent },
     { path: 'publication',           component: PublicationComponent },

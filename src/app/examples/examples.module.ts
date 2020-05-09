@@ -27,6 +27,7 @@ import { RavindranathComponent } from './ravindranath/ravindranath.component';
 import { CharankumarComponent } from './charankumar/charankumar.component';
 import { ProductancoComponent } from './productanco/productanco.component';
 import { AlertmessageComponent } from './alertmessage/alertmessage.component';
+import { Product4aComponent } from './product4a/product4a.component';
 
 
 @NgModule({
@@ -61,6 +62,7 @@ import { AlertmessageComponent } from './alertmessage/alertmessage.component';
         CharankumarComponent,
         ProductancoComponent,
         AlertmessageComponent,
+        Product4aComponent,
     ],
     providers:[
         AlertmessageComponent,
